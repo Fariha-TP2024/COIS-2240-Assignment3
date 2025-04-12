@@ -1,19 +1,18 @@
 public class Truck extends Vehicle implements Rentable {
-    private double cargoCapacity;
+    private int cargoCapacity;
 
-    public Truck(String make, String model, int year, double cargoCapacity) {
-        super(make, model, year);
-        if (cargoCapacity <= 0) throw new IllegalArgumentException("Cargo capacity must be > 0");
-        this.cargoCapacity = cargoCapacity;
-    }
+        public Truck(String licensePlate, String make, String model, int year, int cargoCapacity) {
+            super(licensePlate, make, model, year);
+            this.cargoCapacity = cargoCapacity;
+        }
 
-    public double getCargoCapacity() {
+    public int getCargoCapacity() {
         return cargoCapacity;
     }
 
     @Override
     public String getInfo() {
-        return super.getInfo() + " | Cargo Capacity: " + cargoCapacity;
+        return super.toString() + " | Cargo Capacity: " + cargoCapacity + "kg";
     }
 
     @Override

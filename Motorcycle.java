@@ -1,10 +1,11 @@
 public class Motorcycle extends Vehicle implements Rentable {
     private boolean hasSidecar;
 
-    public Motorcycle(String make, String model, int year, boolean hasSidecar) {
-        super(make, model, year);
+    public Motorcycle(String licensePlate, String make, String model, int year, boolean hasSidecar) {
+        super(licensePlate, make, model, year);
         this.hasSidecar = hasSidecar;
     }
+
 
     public boolean hasSidecar() {
         return hasSidecar;

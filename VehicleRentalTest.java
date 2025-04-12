@@ -5,7 +5,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Modifier;
 import java.time.LocalDate;
 
-public class VehicleRentalAppTest {
+public class VehicleRentalTest {
     private RentalSystem rentalSystem;
     private Vehicle vehicle;
     private Customer customer;
